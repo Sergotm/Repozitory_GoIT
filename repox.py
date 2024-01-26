@@ -1,1 +1,2 @@
 print('Jedo')
+g = True
