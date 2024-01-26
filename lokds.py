@@ -1,2 +1,0 @@
-print('Jedo')
-g = True
