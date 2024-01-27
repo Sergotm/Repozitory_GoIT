@@ -1,2 +1,1 @@
-def statement():
-    pass
+wwww = 0
