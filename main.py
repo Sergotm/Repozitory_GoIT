@@ -1,8 +1,15 @@
 New_dict = {
-       'name':'Serhii',
-       'age': 24, 
-       'sity':'Poland'
+    'Age': 24,
+    'Name': 'Serhii',
+    'koles': [1,2,3]     
 }
-New_dict['koko'] = False
-
-print(New_dict)
+Do_dict = {
+    'city':'Poland',
+    'name':'Karina',
+    'Name':'SERHII'
+}
+for key, value in New_dict.items():
+    if key != 'koles':
+       print(f'Ключ: {key} / Значение: {value}')
+    else:
+       break
