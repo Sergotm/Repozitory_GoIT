@@ -8,8 +8,10 @@ Do_dict = {
     'name':'Karina',
     'Name':'SERHII'
 }
-for key, value in New_dict.items():
-    if key != 'koles':
-       print(f'Ключ: {key} / Значение: {value}')
-    else:
-       break
+Falst_dict = {
+    'Praca':'Elekrtomonter',
+    'city':'Irland',
+    'Age': 3
+}
+Fol_start = 
+print(f'{Fol_start}')
