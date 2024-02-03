@@ -35,6 +35,29 @@ _ = 1 >= 2
 _ = 1 < 2
 _ = 1 <= 2
 
+# Тернарный оператор
+
+python = True
+name = 'Serhii' if python else 'No name'
+
+python = None
+name = python or 'Python', ' Быстрая проверка переменной'
+
+# Оператор Match
+
+fruits = ('banana', 'orange') , 'Поиск подходящего шаблона, если нету выполняеться заглушка'
+match fruits: 
+    case 'banana', 'orange':
+        print(f'Banana')
+    case _:
+        pass
+
+pets = ['cat', 'dog', 'fish']
+match pets:
+    case[_,_,'fish']:
+        print(f'DOG,CAT,FISH')
+
+
 #Цикл For
 for _ in types:
     pass
@@ -60,7 +83,9 @@ _ = [1, 2, 3][:]
 _ = {**{}} #    Распаковка Словаря в другой словарь 
 
 #   Утверждение assert
+
 assert h, 'test'
+
 
 #   Цикл While
 

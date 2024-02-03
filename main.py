@@ -1,6 +1,6 @@
-
-a = "123".isdigit()  # True
-b = "h1ello".isalpha()  # True
-c = " 1".isspace()  # True
-
-print(f'{c}')
+num = int(input(f'Please check number 1-20: \n'))
+while True:
+    print(f'{num}')
+    num -=1
+    if num <= 0:
+        break
