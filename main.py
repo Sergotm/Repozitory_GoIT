@@ -1,6 +1,4 @@
-num = int(input(f'Please check number 1-20: \n'))
-while True:
-    print(f'{num}')
-    num -=1
-    if num <= 0:
-        break
+def prest(**kwargs):
+    for key, values in kwargs.items():
+        print(f'Key: {key}, Values: {values}')
+prest(person_1 = 'Serhii', age_person_1 = 24, person_2 = 'Karina',age_person_2 = 22)
