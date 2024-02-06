@@ -1,4 +1,17 @@
-def prest(**kwargs):
-    for key, values in kwargs.items():
-        print(f'Key: {key}, Values: {values}')
-prest(person_1 = 'Serhii', age_person_1 = 24, person_2 = 'Karina',age_person_2 = 22)
+user_1 = {
+    'name':'Serhii',
+    'age':24,
+    'city':'Wroclaw'
+
+}
+user_2 ={
+    'name':'Karina',
+    'age':22,
+    'city':'Poland'
+    
+}
+
+# user_1 = user_1 | user_2
+# user_2 = user_2 | user_1
+print(f'{user_1}')
+print(f'{user_2}')
