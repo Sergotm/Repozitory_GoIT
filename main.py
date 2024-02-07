@@ -1,17 +1,9 @@
-user_1 = {
-    'name':'Serhii',
-    'age':24,
-    'city':'Wroclaw'
-
-}
-user_2 ={
-    'name':'Karina',
-    'age':22,
-    'city':'Poland'
+def fibonachi(n):
+    if n <= 1:
+        return n
+    else:
+        result = fibonachi(n-1)+(n-2)
+        print(f'{result}')
+        return result
     
-}
-
-# user_1 = user_1 | user_2
-# user_2 = user_2 | user_1
-print(f'{user_1}')
-print(f'{user_2}')
+print(fibonachi(20))
