@@ -2,7 +2,7 @@
 import time
 import random
 import typing
-
+a, b, c, d, f, q = 0
 #   Основные типи и структуры //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 types = [
@@ -30,6 +30,7 @@ _ = 1 // 2
 _ = 1 % 2 
 _ = 1 and 2
 _ = 1 or 2
+print(a is b), ' Вернет True False'
 _ = 1 > 2
 _ = 1 >= 2
 _ = 1 < 2
@@ -114,22 +115,20 @@ def name (name:str = 'Serhii', age:int=24)-> tuple:
 def main(*args)->str: 
     pass
 print(main('hello', ' ', '', 'world','!'))
+
 '**kwargs' 'Принимает любое количество параметров в функцию и делает из них словарь/////////  **kwargs////////'
 def prest(**kwargs):
     for key, values in kwargs.items():
         print(f'Key: {key}, Values: {values}')
 prest(person_1 = 'Serhii', age_person_1 = 24, person_2 = 'Karina',age_person_2 = 22)
 
-def func (text: str, space: str, action: typing.Callable) -> None:
-    if not text:
-        return
-    
-    print(space + action(text))
-    func(text[1:], space + ' ', action)
-    print(space + action(text))
-
-#   Lambda функции ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-func('*' * 11, '', lambda text: ' '.join(i for i in text))
+#    Рекурсия 
+def fibonachi(n):
+    if n <= 1: # Случайный случай
+        return n
+    else:
+        return fibonachi(n-1)+(n-2) # Рекурсивный случай
+print(fibonachi(20))
 
 #   Декораторы  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 def decorator(multiplier: int):
