@@ -92,30 +92,8 @@ while a:
 else:
     pass
 
-#   Функции ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-'Изменямые возвращение','Int','Str','Float','Tuple'
-'Не Изменямые возврашение','List','Dict','Set'
-def name (name:str = 'Serhii', age:int=24)-> tuple:
-    return name, age
 
-'*args' 'Принимает любое количество параметров в функцию и делает из них кортеж/////////  *args////////'
-def main(*args)->str: 
-    pass
-print(main('hello', ' ', '', 'world','!'))
 
-'**kwargs' 'Принимает любое количество параметров в функцию и делает из них словарь/////////  **kwargs////////'
-def prest(**kwargs):
-    for key, values in kwargs.items():
-        print(f'Key: {key}, Values: {values}')
-prest(person_1 = 'Serhii', age_person_1 = 24, person_2 = 'Karina',age_person_2 = 22)
-
-#    Рекурсия 
-def fibonachi(n):
-    if n <= 1: # Случайный случай
-        return n
-    else:
-        return fibonachi(n-1)+(n-2) # Рекурсивный случай
-print(fibonachi(20))
 
 #   Декораторы  ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 def decorator(multiplier: int):
@@ -168,39 +146,3 @@ else:
 finally:
     ...
 
-#   Классы ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-class A:
-
-    class_attrs = None
-
-    def __init__(self, *args, **kwargs):
-        self.args, self.kwargs = args, kwargs
-        self.__test.arg = None
-
-    def main(self) -> None:
-        ...
-
-    #2 usages
-    @property
-    def test_arg(self) -> typing.Any:
-        return self.__test_arg
-    
-    #1 usage
-    @test_arg.setter
-    def test_arg(self, value: typing.Any):
-        self.__test.arg = value
-
-class B(A):
-
-    def main(self) -> None:
-        super().main()
-        print(self.test_arg)
-
-    @classmethod
-    def create(cls, *args, **kwargs) -> 'B':
-        return cls(*args, **kwargs)
-    
-    @staticmethod
-    def get_test() -> str:
-        return 'test'
-      
