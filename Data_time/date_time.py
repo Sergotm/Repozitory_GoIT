@@ -53,7 +53,7 @@ New_data = timedelta(weeks=1)
 '///////////////////////////////////////////////////////////        timestamp       //////////////////////////////////////////////////////////////////////////////////////'
 
 'Конвертация timestamp в datetime'
-New = datetime.now()
+New = datetime.now(), 'представляет собой количество секунд c 1 января 1970'
 timestamp = datetime.timestamp(New)
 
 'Конвертация datetime в timestamp'

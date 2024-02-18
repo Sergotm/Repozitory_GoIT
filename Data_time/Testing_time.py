@@ -1,4 +1,5 @@
 from datetime import datetime, timezone, timedelta
+import time
 
 
 # # Запрашиваем у пользователя год его рожденния ////////////////////////////////////
@@ -40,4 +41,44 @@ from datetime import datetime, timezone, timedelta
 # result_Y = New_time.year - From_W_Day.year
 # result_M = New_time.month - From_W_Day.month
 # result_D = New_time.day - From_W_Day.day
-# print(f'Прошло только: {result_Y} лет: {result_M} месяцев, и {result_D} дней')
+# # print(f'Прошло только: {result_Y} лет: {result_M} месяцев, и {result_D} дней')
+
+# #
+# dat_input = input(f'Введите дату и время. Format YYYY_MM_DD HH:MM:SS\n')
+# new_check = datetime.strptime(dat_input, '%Y-%m-%d %H:%M:%S')
+# timestamp = datetime.timestamp(new_check)
+# print(f'{timestamp}') 
+
+# date_user_info = float(input())
+# lokac_timestamp = datetime.fromtimestamp(date_user_info)
+# print(f'{lokac_timestamp}')
+
+# # Parsing datetime 
+# new_data = datetime.now()
+# choise = new_data.strftime("%Y")
+# print(f'{choise}')
+
+# curent = time.time()
+# print(f'{curent}')
+# local_time = time.localtime()
+# print(f'{local_time}')
+
+
+# current_time = time.time()
+# print(f"Поточний час: {current_time}")
+
+# local_time = time.localtime()
+# print(f"Місцевий час: {local_time}")
+
+
+# # Записуємо час на початку виконання
+# start_time = time.perf_counter()
+# for _ in range(1_000_000):
+#     pass  # Просто проходить цикл мільйон разів
+# end_time = time.perf_counter()
+# execution_time = end_time - start_time
+
+# user = 1708264837.287364
+# new = datetime.fromtimestamp(user)
+
+# print(f'{new}')
