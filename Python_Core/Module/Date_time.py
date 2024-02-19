@@ -77,7 +77,7 @@ dj_time = datetime.fromtimestamp(timestamp2)
 
 now = datetime.now()
 # Форматування дати і часу
-formatted_date = now.strftime("%Y-%m-%d %H:%M:%S"), 'Bспользуется для форматирования объектов даты и времени в строки'
+formatted_date = now.strftime("%Y-%m-%d %H:%M:%S"), 'Используется для форматирования объектов даты и времени в строки'
 
 # Форматування лише дати
 formatted_date_only = now.strftime("%A, %d %B %Y")
