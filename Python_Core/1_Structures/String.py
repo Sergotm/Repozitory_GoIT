@@ -16,3 +16,8 @@ s = 'my name'.title() , ' Сделает каждую первую букву к
 s = "456".isdigit() , 'Проверяет создана ли строка только с Цифр. Вернет True/False'
 s = "Kokos".isalpha(), 'Проверяет создана ли строка только с Букв. Вернет True/False'
 s = " ".isspace() , 'Проверяет создана ли строка только с Пробелов. Вернет True/False'
+
+one_line_text = "Textual data in Python is handled with str objects, or strings. \
+Strings are immutable sequences of Unicode code points. \
+String literals are written in a variety of ways: \
+single quotes, double quotes, triple quoted."

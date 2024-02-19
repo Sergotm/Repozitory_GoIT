@@ -1,10 +1,5 @@
-import math
-import datetime
-x = 2.5
-ceil_result = math.ceil(x)
-floor_result = math.floor(x)
-trunc_result = math.trunc(x)
-
-r = math.isclose(0.1+0.2,0.3)
-# print(f'{r}')
-print(datetime.datetime.now())
+one_line_text = "Textual data in Python is handled with str objects, or strings. \
+Strings are immutable sequences of Unicode code points. \
+String literals are written in a variety of ways: \
+single quotes, double quotes, triple quoted."
+print(f'{one_line_text}')
