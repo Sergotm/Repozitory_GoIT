@@ -1,4 +1,5 @@
-s = 'Some words'
+language = ['age', 'pop','google', 'apple']
+new_list = [1, 2, 3, 4, 5]
 
-print(s.find('o'))
-print(s.rfind('o'))
+del language[1]
+print(language)
