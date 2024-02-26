@@ -20,4 +20,3 @@ lottery_numbers = get_numbers_ticket(min=1,max=1000,quantity=10)
 print(f'Вашi лотерейнi числа: {lottery_numbers} ')
 
 
-
