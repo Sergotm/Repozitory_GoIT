@@ -11,3 +11,5 @@ pets = ['cat', 'dog', 'fish']
 match pets:
     case[_,_,'fish']:
         print(f'DOG,CAT,FISH')
+
+
