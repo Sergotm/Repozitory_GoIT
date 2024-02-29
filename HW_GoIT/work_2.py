@@ -1,6 +1,6 @@
 import random
 
-def get_numbers_ticket(min:int, max:int, quantity:int)->int:
+def get_numbers_ticket(min:int, max:int, quantity:int) -> int:
     keys_list = []
     for _ in range(quantity):
         num_random = random.randint(min, max)

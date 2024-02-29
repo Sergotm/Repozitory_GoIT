@@ -12,7 +12,7 @@ raw_numbers = [
     "38050 111 22 11   ",
 ]
 
-def normalize_phone(phone_number):
+def normalize_phone(phone_number:list) -> list:
     ret_list = []
     # print(phone_number) # Выводим для себя список номеров
     # 1. Цикл будет удалять все лишние знаки в номере

@@ -6,7 +6,7 @@ user_list_dict = [
     {'name':'Nick Baber','birthday':'2002-03-02'},
     {'name':'Renni Fuler','birthday':'2005-03-05'}]
 
-def get_upcoming_birthdays(users):
+def get_upcoming_birthdays(users:list) -> list:
     TODAY_DATE = datetime.today().date()
     n_upcoming_birthdays = []
 
