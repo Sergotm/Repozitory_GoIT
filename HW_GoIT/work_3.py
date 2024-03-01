@@ -17,22 +17,23 @@ def normalize_phone(phone_number:list) -> list:
     # print(phone_number) # Выводим для себя список номеров
     # 1. Цикл будет удалять все лишние знаки в номере
     for element in phone_number:
-        pattern_lement = r'[;,\-:!\.\ \(\),\+,\\n,\\t]' # Вказуємо що маємо видалити
+        pattern_lement = r'[;,\-:!\.\ \(\),\\n,\\t]' # Вказуємо що маємо видалити
         replace = ''
         formatted_number = re.sub(pattern_lement,replace,element) # Удаляємо зайвi символи
 
-        if formatted_number:
-            pattern_num = r'38'
-            match = re.search(pattern_num,formatted_number,re.IGNORECASE)# Провiряємо перше входження
-            if match:
-                formatted_number = '+' + formatted_number # Якщо в початку маємо 38 то дадамо тiльки +
-                ret_list.append(formatted_number)
-            else:
-                formatted_number = '+38' + formatted_number # Якщо в початку нема +38 дадаємо його
-                ret_list.append(formatted_number)
+        if formatted_number[0] == '0':
+            formatted_number = '+38' + formatted_number
+            ret_list.append(formatted_number)
+        elif formatted_number[0] == '3':
+            formatted_number = '+' + formatted_number
+            ret_list.append(formatted_number)
+        elif formatted_number[0] == '+':
+            ret_list.append(formatted_number)
 
+        
     return ret_list
 
 sanitized_numbers = normalize_phone(phone_number=raw_numbers)
 print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
-
+for i in sanitized_numbers:
+    print(i)
