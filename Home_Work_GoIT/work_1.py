@@ -2,11 +2,10 @@ import datetime
 
 def get_days_from_today(date:str) -> int:
     today_data = datetime.datetime.today()
-    date = input(f'Please write a random date: Format YYYY-MM-DD \n->')
     get_date = datetime.datetime.strptime(date, '%Y-%m-%d')
     result = (today_data - get_date).days
 
-    return f'{result} days'
+    return result
 
 print(get_days_from_today(date='2020-01-01'))
 

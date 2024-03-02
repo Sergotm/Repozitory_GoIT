@@ -35,5 +35,3 @@ def normalize_phone(phone_number:list) -> list:
 
 sanitized_numbers = normalize_phone(phone_number=raw_numbers)
 print("Нормалізовані номери телефонів для SMS-розсилки:", sanitized_numbers)
-for i in sanitized_numbers:
-    print(i)

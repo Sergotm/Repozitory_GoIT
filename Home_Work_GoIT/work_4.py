@@ -1,17 +1,17 @@
 from datetime import datetime, timedelta
 
 user_list_dict = [
-    {'name':'Pawel Oskar','birthday':'2012-03-03'},
-    {'name':'Nensi Kuper','birthday':'2012-03-08'},
-    {'name':'Nick Baber','birthday':'2002-03-05'},
-    {'name':'Renni Fuler','birthday':'2005-03-09'}]
+    {'name':'Pawel Oskar','birthday':'2012.03.03'},
+    {'name':'Nensi Kuper','birthday':'2012.03.08'},
+    {'name':'Nick Baber','birthday':'2002.03.05'},
+    {'name':'Renni Fuler','birthday':'2005.03.09'}]
 
 def get_upcoming_birthdays(users:list) -> list:
     TODAY_DATE = datetime.today().date()
     n_upcoming_birthdays = []
 
     for user in users:
-        user['birthday'] = datetime.strptime(user['birthday'], '%Y-%m-%d').date()
+        user['birthday'] = datetime.strptime(user['birthday'], '%Y.%m.%d').date()
 
     for user in users:
         # Тут присвоим наш 2024 год учаснику для проверки дальше . / 2012-03-01 -> 2024-03-01
