@@ -4,7 +4,7 @@ user_list_dict = [
     {'name':'Pawel Oskar','birthday':'2012.03.03'},
     {'name':'Nensi Kuper','birthday':'2012.03.08'},
     {'name':'Nick Baber','birthday':'2002.03.05'},
-    {'name':'Renni Fuler','birthday':'2005.03.09'}]
+    {'name':'Renni Fuler','birthday':'2005.03.08'}]
 
 def get_upcoming_birthdays(users:list) -> list:
     TODAY_DATE = datetime.today().date()
@@ -20,16 +20,18 @@ def get_upcoming_birthdays(users:list) -> list:
         #  Проверка не прошел день рождения
         if birthday_this_year < TODAY_DATE:
             birthday_this_year = birthday_this_year.replace(year=TODAY_DATE.year + 1)
-
-        # Тут будет разница между Днем рождения и сегодняшним днем для сравнения дальше
-        count_day = (birthday_this_year - TODAY_DATE).days
-
+        if birthday_this_year == TODAY_DATE:
+            birthday_this_year = TODAY_DATE
+        
         # Проверяем попадет ли день на суботу или воскресенье
         if (birthday_this_year.weekday() == 5):  # Субота
                 birthday_this_year += timedelta(days=2)  # Переход на следущий понедельник
 
         elif (birthday_this_year.weekday() == 6):  # Воскресенье
                 birthday_this_year += timedelta(days=1)  # Переход на следущий понедельник
+
+        # Тут будет разница между Днем рождения и сегодняшним днем для сравнения дальше
+        count_day = (birthday_this_year - TODAY_DATE).days
 
         # Сохраняем дату имя персонажа и дату если оно <= 7 
         if count_day != 0 and count_day <= 7:
@@ -40,5 +42,3 @@ def get_upcoming_birthdays(users:list) -> list:
 
 upcoming_birthdays = get_upcoming_birthdays(user_list_dict)
 print(f'Список привітань на цьому тижні:{upcoming_birthdays}')
-
-
