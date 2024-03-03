@@ -14,7 +14,7 @@ def get_numbers_ticket(min:int, max:int, quantity:int) -> int:
     except ValueError:
         return keys_list
 
-lottery_numbers = get_numbers_ticket(min=5, max=20, quantity=10)
+lottery_numbers = get_numbers_ticket(min=5, max=30, quantity=20)
 print(f'Вашi лотерейнi числа: {lottery_numbers} ')
 
 
