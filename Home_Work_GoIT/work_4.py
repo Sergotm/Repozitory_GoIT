@@ -40,6 +40,5 @@ def get_upcoming_birthdays(users:list) -> list:
 
 upcoming_birthdays = get_upcoming_birthdays(user_list_dict)
 print(f'Список привітань на цьому тижні:{upcoming_birthdays}')
-for i in upcoming_birthdays:
-    print(i)
+
 
