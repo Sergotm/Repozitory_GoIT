@@ -1,10 +1,10 @@
 from datetime import datetime, timedelta
 
 user_list_dict = [
-    {'name':'Pawel Oskar','birthday':'2012.03.03'},
+    {'name':'Pawel Oskar','birthday':'2012.03.04'},
     {'name':'Nensi Kuper','birthday':'2012.03.08'},
     {'name':'Nick Baber','birthday':'2002.03.05'},
-    {'name':'Renni Fuler','birthday':'2005.03.08'}]
+    {'name':'Renni Fuler','birthday':'2005.03.09'}]
 
 def get_upcoming_birthdays(users:list) -> list:
     TODAY_DATE = datetime.today().date()
@@ -21,7 +21,8 @@ def get_upcoming_birthdays(users:list) -> list:
         if birthday_this_year < TODAY_DATE:
             birthday_this_year = birthday_this_year.replace(year=TODAY_DATE.year + 1)
         if birthday_this_year == TODAY_DATE:
-            birthday_this_year = TODAY_DATE
+            n_upcoming_birthdays.append({"name": user["name"], "congratulation_date": birthday_this_year})
+            
         
         # Проверяем попадет ли день на суботу или воскресенье
         if (birthday_this_year.weekday() == 5):  # Субота
@@ -41,4 +42,6 @@ def get_upcoming_birthdays(users:list) -> list:
         
 
 upcoming_birthdays = get_upcoming_birthdays(user_list_dict)
-print(f'Список привітань на цьому тижні:{upcoming_birthdays}')
+# print(f'Список привітань на цьому тижні:{upcoming_birthdays}')
+for i in upcoming_birthdays:
+    print(i)
