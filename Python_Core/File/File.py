@@ -74,6 +74,8 @@ def Masiw_Bytes(): #Масив Байтов
     byte_array.append(ord('!')), 'Добавление значений'
     string = byte_array.decode('UTF-8'), 'Изменяем bytearray на string'
 
+def Archiv():
+    pass
 
 def parametrs_file():
     '''Параметри:

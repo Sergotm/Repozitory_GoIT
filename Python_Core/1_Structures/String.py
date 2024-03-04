@@ -7,6 +7,7 @@ s = "hello"
 x = 'BigBoos'
 s.upper() , 's -> S  Перевод всего в большой регистр'
 s.lower() , 'S -> s  Перевод всего в малый регистр'
+s = s.casefold(), 'Перевод в нижний регистр но для сравнение язиков'
 s.isupper() , ''
 s.islower() , ''
 s = s.startswith('hello') , 'Проверка начала строки. Вернет True/False'
