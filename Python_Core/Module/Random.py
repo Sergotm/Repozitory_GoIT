@@ -10,7 +10,7 @@ by_py = random.randrange(1,10,2), 'Start,stop,step'
 # print(by_py)
 
 ny_list = ['list','tuple','dict','range']
-random.shuffle(ny_list) , 'Перемешиваем список'
+random.shuffle(ny_list) , 'Перемешиваем список, и изменяет список'
 # print(f'{ny_list}')
 
 new_value = random.choice(ny_list)
@@ -24,5 +24,4 @@ one_sample = random.sample(population=ny_list, k=3), 'Аналог choices то�
 
 patern = random.uniform(a=14,b=56) ,'Метод повертає випадкове дійсне число N, таке що a <= N <= b.'
 # print(patern)
-
 

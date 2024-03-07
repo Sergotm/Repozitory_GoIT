@@ -10,6 +10,7 @@ current_datetime.time(), 'Вернет только Время'
 current_datetime.weekday(), ' Номер дня в Неделе начиная с 0 а воскресенье с -6'
 current_datetime.total_seconds(), 'Метод для преобразования в секунды'
 current_datetime.toordinal(), 'Возвращающий порядковый номер с  1 января 1 года нашей эры '
+other = current_datetime.replace(year=1), 'Изменения даты месяца ......'
 
 'Комбинирование обьектов Data, time'
 date_path = datetime.date(2023,12,14)
