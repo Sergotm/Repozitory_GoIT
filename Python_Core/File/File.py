@@ -52,7 +52,7 @@ def ASCII_UTF_8_CP1251(): # Котдировка строк
     ord('a') , '#97' 'Чтоб узнать код символа'
     chr(97), 'a' 'Чтоб узнать символ по коду'
     def ASCII(): # Переобразование в ASII КОД и ОБРАТНО
-        test = ' '.join(str(ord(el)) for el in s)
+        test = ' '.join(str(ord(el)) for el in None)
         new = test.split(' ')
         check = []
         for el in new:
