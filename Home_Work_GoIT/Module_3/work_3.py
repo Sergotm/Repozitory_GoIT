@@ -1,4 +1,3 @@
-from datetime import datetime, timedelta
 import re 
 raw_numbers = [
     "067\\t123 4567",
