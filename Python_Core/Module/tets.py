@@ -1,19 +1,41 @@
-from pathlib import Path, PurePath
-import shutil
-import time
+# from pathlib import Path
+# import shutil
+# NUMBER_LINES = 4
 
-new_dir = Path('Python_Core\\File\\text.txt')
-# new_dir.mkdir(parents=True,exist_ok=True)
+# try:
+#     lines = []
+#     with open('Python_Core\\Module\\test.txt', 'r', encoding='UTF-8') as file:
+#         for line in file:
+#             lines.append(line)
+#             if len(lines) > NUMBER_LINES:
+#                 lines.pop(0)
+#     print(lines)
+# except OSError as err:
+#     print(f'Помилка дотупа к файлу: {err}')
 
-# creation_time = new_dir.stat().st_ctime
-# modification_time = new_dir.stat().st_mtime
-# 'stat() --> os.stat_result(st_mode=33206, st_ino=68679894317402086, st_dev=1857344746, st_nlink=1, st_uid=0, st_gid=0, st_size=4818, st_atime=1710178105, st_mtime=1710089317, st_ctime=1709378945)'
-# print(f'Дата создания файла: {time.ctime(creation_time)}')
-# print(f'Дата последнего изменения файла: {time.ctime(modification_time)}')
 
-if new_dir.exists():
-    if new_dir.is_file():
-        new_dir.unlink()
-        print(f'Файл было удалено: {new_dir}')
-else:
-    print(f'Файла не существет: !')
+
+# with open('Python_Core\\Module\\test.txt', 'r', encoding='UTF-8') as file:
+#     lines = file.readlines()
+#     last_n_lines = lines[-NUMBER_LINES:]
+# print(last_n_lines)
+
+# folder = Path('Python_Core\\Path\\temp.txt')
+
+
+
+# try:
+#     with open('Python_Core\\Path\\temp.txt', 'r', encoding='UTF-8') as file:
+#         for line in file:
+#             print(line, end='')
+# except Exception:
+#     print('Error: ')
+# finally:
+#     print('Happy end')
+
+# archive = shutil.make_archive('my_archive', 'zip', 'Python_Core\Path')
+# shutil.unpack_archive('my_archive.zip','ABC')
+
+n = []
+n.append(el for el in Exception)
+print(n)
