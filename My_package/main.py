@@ -1,3 +1,4 @@
-from My_package import foo
+from My_package.foo import foo
+
 
 print(foo('Ivan'))
