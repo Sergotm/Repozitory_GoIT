@@ -1,13 +1,8 @@
-# from py_1 import get_name
+def add_bonus(salary:int, bonus:int)->int:
+    return salary + bonus
+def main():
+    d = add_bonus(4, 8)
+    print(d)
 
-# def goodbuy(name):
-#     print(f'Goodbuy: {name}')
-
-# def main():
-#     name = get_name()
-#     goodbuy(name)
-
-# if __name__ == '__main__':
-#     main()
-
-import
+if __name__ == '__main__':
+    main()

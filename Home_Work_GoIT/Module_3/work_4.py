@@ -1,8 +1,8 @@
 from datetime import datetime, timedelta
 
 user_list_dict = [
-    {'name':'Pawel Oskar','birthday':'2012.03.08'},
-    {'name':'Nensi Kuper','birthday':'2012.03.09'},
+    {'name':'Pawel Oskar','birthday':'2012.03.14'},
+    {'name':'Nensi Kuper','birthday':'2012.03.19'},
     {'name':'Nick Baber','birthday':'2002.03.10'},
     {'name':'Renni Fuler','birthday':'2005.03.11'}]
 

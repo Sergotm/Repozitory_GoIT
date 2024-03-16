@@ -1,25 +1,29 @@
 from pathlib import Path
 
-def total_salary(path:Path)-> int:
-    total = 0
-    len_user = 0
-    with open('Home_Work_GoIT\Module_4\Text_1.txt', 'r', encoding='UTF-8') as file:
-        for line in file:
-            user = line.strip().split(',')
-            if len(user) > 1:
-                count = float(user[1])
-                total += count
-                len_user += 1
-                
-    if len_user == 0:
-        total = 0
-    else:
-        sum_total = total / len_user
-    
-    return total, sum_total
 
 
+def total_salary(path:Path)->None:
+    total_sum = 0
+    count_person = 0
+    try:
+        with open('Home_Work_GoIT//Module_4//Text_1.txt', 'r', encoding='UTF-8') as file:
+            for line in file:
+                user = line.strip().split(',')
+                if len(user) > 1:
+                    sum_float = float(user[1])
+                    total_sum += sum_float
+                    count_person +=1
+            
+        if count_person == 0:
+            total_sum = 0
+        else:
+            res_total = total_sum / count_person
+        return total_sum, res_total
 
-total, average = total_salary(Path('Home_Work_GoIT\Module_4\Text_1.txt'))
-print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
-# total_salary(Path('Home_Work_GoIT\Module_4\Text_1.txt'))
+    except FileNotFoundError:
+        print(f'Файл отсутсвует !')
+
+
+total = total_salary(Path('Home_Work_GoIT//Module_4//Text_1.txt'))
+print(f"Загальна сума заробітної плати: {total[0]}, Середня заробітна плата: {total[1]}")
+print(type(total))

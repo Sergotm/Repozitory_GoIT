@@ -1,13 +1,8 @@
-# def get_name():
-#     name = input('Write your name: ')
-#     return name
+from py_2 import add_bonus as fast
+def main():
+    s = fast(salary=5, bonus= 1)
+    print(s)
 
-# def greet(name):
-#     print(f'Hello {name}')
 
-# def main():
-#     name = get_name()
-#     greet(name)
-
-# if __name__ == '__main__':
-#     main()
+if __name__ == '__main__':
+    main()
