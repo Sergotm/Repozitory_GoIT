@@ -1,12 +1,10 @@
 from pathlib import Path
 
-
-
 def total_salary(path:Path)->None:
     total_sum = 0
     count_person = 0
     try:
-        with open('Home_Work_GoIT//Module_4//Text_1.txt', 'r', encoding='UTF-8') as file:
+        with open(path, 'r', encoding='UTF-8') as file:
             for line in file:
                 user = line.strip().split(',')
                 if len(user) > 1:
@@ -22,8 +20,9 @@ def total_salary(path:Path)->None:
 
     except FileNotFoundError:
         print(f'Файл отсутсвует !')
+        return None, None
 
 
-total = total_salary(Path('Home_Work_GoIT//Module_4//Text_1.txt'))
-print(f"Загальна сума заробітної плати: {total[0]}, Середня заробітна плата: {total[1]}")
-print(type(total))
+total,average = total_salary('Home_Work_GoIT//Module_4//Text_1.txt')
+print(f"Загальна сума заробітної плати: {total}, Середня заробітна плата: {average}")
+# print(type(total))
