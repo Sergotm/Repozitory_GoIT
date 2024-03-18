@@ -42,7 +42,7 @@ def main():
         elif command == 'change':
             print(change_contact(args, contacts))
 
-        elif command == 'username':
+        elif command == 'phone':
             print(show_phone(args, contacts))
 
         elif command == 'all':
