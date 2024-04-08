@@ -31,7 +31,6 @@ s = x.removeprefix('Big'), 'Удалиние Префикса'
 s = x.removesuffix('Boos'), 'Удалиние Суфикса'
 s = s.find("er", 0, 10) ,'Поиск символов в строках | Значение/Начало/Конец | Если значения нет вернет -1'
 s = s.rfind('wo', 0, 10), 'Аналог только поиск с правой стороны'
-
 trantab = str.maketrans('o', '1', 'l'), '1.Что надо заменить intab = o -> 2.На что надо заменить outtab = 1 -> 3.Что надо удалить'
 jet = 'Hello world'
 print(jet.translate(trantab))

@@ -23,16 +23,6 @@ print(dict_sorted)
 
 
 
-
-
-
-
-
-
-
-
-
-
 # for word, count in dict_words.items():
 #     if count in dict_reverse:
 #         dict_reverse[count].append(word)
