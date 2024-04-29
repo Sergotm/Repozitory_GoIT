@@ -6,6 +6,7 @@ TypeError, 'виникає, коли операція зі змінною цьо
 ValueError, 'виникає, коли тип операнда відповідний, але значення таке, що операцію неможливо виконати.'
 ZeroDivisionError,  'Деленине на ноль'
 KeyError, 'Отсутствие ключа в словаре'
+NotImplementedError, ''
 try:
     result = 10 / 0
     # print(result)

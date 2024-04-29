@@ -90,6 +90,7 @@ else:
     print(john)
 # Пошук конкретного телефону у записі John
 found_phone = john.find_phone("5555555555")
+
 if DEBUG:   
     print(f"[Нашли номер] {john.name}: {found_phone}")  # Виведення: 5555555555
 else:

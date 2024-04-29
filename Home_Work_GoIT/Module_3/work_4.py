@@ -1,10 +1,10 @@
 from datetime import datetime, timedelta
 
 user_list_dict = [
-    {'name':'Pawel Oskar','birthday':'2012.03.14'},
-    {'name':'Nensi Kuper','birthday':'2012.03.19'},
+    {'name':'Pawel Oskar','birthday':'2012.04.17'},
+    {'name':'Nensi Kuper','birthday':'2012.04.19'},
     {'name':'Nick Baber','birthday':'2002.03.10'},
-    {'name':'Renni Fuler','birthday':'2005.03.11'}]
+    {'name':'Renni Fuler','birthday':'2005.04.23'}]
 
 def get_upcoming_birthdays(users:list) -> list:
     TODAY_DATE = datetime.today().date()
@@ -39,6 +39,7 @@ def get_upcoming_birthdays(users:list) -> list:
         
 
 upcoming_birthdays = get_upcoming_birthdays(user_list_dict)
-print(f'Список привітань на цьому тижні:{upcoming_birthdays}')
-
+# print(f'Список привітань на цьому тижні:{upcoming_birthdays}')
+for el in upcoming_birthdays:
+    print(el)
 
