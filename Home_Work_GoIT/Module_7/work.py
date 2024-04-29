@@ -48,7 +48,7 @@ class Record: #Клас для зберігання інформації про 
        
     def __str__(self):
         
-        return f"Contact name: {str(self.name)}, phones: {'; '.join(str(p) for p in self.phones)}, birthday: {str(self.birthday)}"
+        return f"Contact name: {str(self.name.value)}, phones: {'; '.join(str(p) for p in self.phones)}, birthday: {str(self.birthday)}"
 
     def add_phone(self, phone_number): # Додаємо тел
         self.phones.append(Phone(phone_number))
